@@ -1,0 +1,36 @@
+Message:
+  CommandError: '&c<!> /gacha {name}'
+  CommandStoreNotFound: '&cTên Không Tồn Tại!'
+  CommandPermissionError: '&c Bạn Không Có Quyền Sử Dụng Lệnh Này!'
+  CommandStoreDisable: '&cStore Này Đã Bị Vô Hiệu Hóa'
+  DailyBuyError: '&c Bạn Đã Hết Số Lần Mua Trong Ngày!'
+  RewardMessage:
+    - '&a--------------------------'
+    - '&a Chúc Mừng Bạn Đã Nhận Được {item_name}'
+    - '&a--------------------------'
+  InventoryFull: '&c Túi Đồ Đã Đầy!'
+Animation:
+  ViewerLocation: ""
+  Location: ""
+  WaitLocation: ""
+  AnimationSkullValue: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjViNzMxN2FiMDMxY2ZkY2EyYTA2YWQzOTNjNDYyNGEyZjVlNDM5YWNlYzZlM2MyMDY0NDg2MWI0YjcwM2I5OSJ9fX0="
+  AnimationTitle:
+    Top: '&7Đang Mở Hộp...'
+    OpenCountdown:
+      start: 4
+      title:
+        0: '&c&kXXX &40 &c&kXXX'
+        1: '&c&kXXX &c1 &c&kXXX'
+        2: '&c&kXXX &e2 &c&kXXX'
+        3: '&c&kXXX &e3 &c&kXXX'
+        4: '&c&kXXX &a4 &c&kXXX'
+    OpenStage:
+      1:
+        time: 30 # 20 = 1s
+        title: '&7Phẩm Chất:&6 {item_tier}' #&6 là default color (màu khi chạy animation đc chỉnh trong packedit)
+      2:
+        time: 30
+        title: '&7Giá Trị Vật Phẩm:&6 {item_price} Xu'
+      3:
+        time: 30
+        title: '&7 Tỉ Lệ Drop:&6 {item_chance}%'

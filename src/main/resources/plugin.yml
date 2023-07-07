@@ -1,0 +1,15 @@
+name: Gachapon
+version: '${project.version}'
+main: org.thanhmagics.gachapon.Gachapon
+api-version: 1.16
+folia-supported: true
+commands:
+  gachaadmin:
+    usage: /<command>
+  gacha:
+    usage: /<command>
+permissions:
+  gacha.admin:
+    default: op
+  gacha.use:
+    default: op

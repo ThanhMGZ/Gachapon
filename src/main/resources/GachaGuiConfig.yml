@@ -1,0 +1,68 @@
+#replacers:
+#{name} : trả về ten của store
+#{full_slot} : trả về 0,1,2,3,4... tới max_size của inventory
+Title: "&aGacha Store {name}"
+InvCol: '6' #6 = 6*9
+GUI:
+  background:
+    item_stack: 'background'
+    slot: "'{full_slot}'"
+  pack:
+    item_stack: 'pack'
+    slot: '10,11,12,13,14,15,16'
+    non_requires:
+      item_stack: 'packnq'
+  preview:
+    item_stack: 'preview'
+    slot: '29,30,31,32,33,38,39,40,41,42'
+  help:
+    item_stack: 'help'
+    slot: '49'
+item_stack:
+  pack:
+    material: 'PLAYER_HEAD'
+    skull_value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWI0MjdlM2E0NzI1NTI2MjQ2NzhiMzM5ZjQwODk2YjQ4ZWUzMGNjMWM5OGIyZjAyZTZiYTg2NTMzOWVjM2U5OSJ9fX0"
+    display_name: '&aGói Số #{pack_id}'
+    lore:
+      - '&7- Giá Bán: '
+      - '{pack_price}'
+      - ''
+      - '&7Số Lần Mua Còn Lại Trong Ngày: &6{pack_dailybuy}'
+      - ''
+      - '&eRight-Click Để Xem Preview!'
+      - '&eLeft-Click Để Mua!'
+    enchant: 'true'
+  null_pack:
+    material: 'PLAYER_HEAD'
+    skull_value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I3OTgwYWZiODZkNzFjMDgwYTI1MDUyODFkMTRhODY2MWIwOTAyZGRiODMwMWJmYjdhODFlYWY1ZGRkZjNhYiJ9fX0="
+    display_name: '&cGói Chưa Ra Mắt!'
+    lore:
+      - '&cloading...'
+  background:
+    material: 'GRAY_STAINED_GLASS_PANE'
+    display_name: '&a'
+    lore: []
+    enchant: 'false'
+  preview:
+    material: 'AIR'
+  help:
+    material: 'MAP'
+    display_name: '&aGeneral Help'
+  packnq:
+    material: 'PLAYER_HEAD'
+    skull_value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVhOWU4ODVlOTNmOTY0ZTAwNzVhNzVlOWFlMjVjZGFiZGEyZmZhNWQxMmZlZWRmYWIwZjg4OWIzZWRiYmU2YiJ9fX0="
+    display_name: '&cGói Số #{pack_id}'
+    lore:
+      - ''
+      - '&c Bạn Cần Mua &e{buyrequires_player}/{buyrequires}&c Gói Trước Để Có Thể Mua Pack Này!'
+      - ''
+      - '&7- Giá Bán: '
+      - '{pack_price}'
+      - ''
+      - '&eRight-Click Để Xem Preview!'
+
+lore_replacer:
+  price:
+    money: '{money} Coins'
+    player_point: '{player_point} Xu'
+    item: '{item} [x{amount}]'
